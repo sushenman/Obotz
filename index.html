@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>O'botz Nepal</title>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER / NAVIGATION
+      This top section contains the logo, navigation links, and enroll button.
+      The links currently point to section IDs, so update the href values if
+      you rename or add page sections.
+    -->
+    <div class="header" id="Header">
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <img src="image/Logo.png" alt="" srcset="" />
+          </div>
+          <div class="navig">
+            <ul>
+              <li>
+                <a href="#Home">Home</a>
+              </li>
+              <li>
+                <a href="#About">About</a>
+              </li>
+              <li>
+                <a href="#Skill">Program</a>
+              </li>
+              <li>
+                <a href="#Project">Franchise</a>
+              </li>
+              <li>
+                <a href="#Contact">Gallery</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn">
+            <button class="enroll-btn">
+              <span class="icon">🚀</span> Enroll Now
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- HERO SLIDER
+      Each .hero-slide is one full background slide.
+      JavaScript automatically reads all .hero-slide elements and creates the
+      indicator dots inside #heroDots.
+
+      To add a new slide:
+      1. Copy one .hero-slide block.
+      2. Change the background-image URL.
+      3. Change the badge, title, and paragraph.
+    -->
+    <section class="hero-slider">
+      <div class="hero-slider-inner">
+        <div class="hero-slide active" style="background-image: url('image/levels.jpeg');">
+          <div class="hero-copy">
+            <span class="hero-badge">STEM Robotics for Kids</span>
+            <h1>Building Tomorrow's Innovators Through Robotics</h1>
+            <p>Hands-on learning programs that spark creativity, critical thinking, and a lifelong love for technology.</p>
+        
+          </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('image/why.jpg');">
+          <div class="hero-copy">
+            <span class="hero-badge">Innovation Starts Here</span>
+            <h1>Learn Robotics, Coding & Engineering</h1>
+            <p>Discover a smarter way to teach STEM with project-based robotics activities designed for curious learners.</p>
+           
+          </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('image/blogs.jpg');">
+          <div class="hero-copy">
+            <span class="hero-badge">Interactive Learning</span>
+            <h1>Inspire Young Minds with Real Robotics</h1>
+            <p>From hands-on builds to wireless control, our programs turn ideas into tangible robotics projects.</p>
+          
+          </div>
+        </div>
+         <div class="hero-slide" style="background-image: url('image/blogs.jpg');">
+          <div class="hero-copy">
+            <span class="hero-badge">Interactive Learning</span>
+            <h1>Inspire Young Minds with Real Robotics</h1>
+            <p>From hands-on builds to wireless control, our programs turn ideas into tangible robotics projects.</p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <!-- WHY O'BOTZ SECTION
+      This section explains the value of O'botz.
+      It uses a two-column layout on large screens and stacks on mobile.
+    -->
+    <div class="description">
+      <div class="why-obotz-header">
+        <h1>Why O'botz</h1>
+        <p class="why-obotz-subtitle">
+          Empowering the next generation of innovators
+        </p>
+      </div>
+      <div class="why-obotz-content">
+        <div class="why-obotz-text">
+          <p class="obotz-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+            nesciunt non temporibus iusto amet ullam aliquid harum maxime
+            possimus corrupti consectetur veniam doloribus quisquam consequatur
+            architecto explicabo quas sunt dicta itaque, aut enim soluta. Quos
+            est dolor dolorem amet enim. Ex a vero itaque eum iste cupiditate
+            eaque deleniti ipsa fuga facere! Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Commodi numquam reprehenderit
+            consectetur optio rem consequatur, ad molestiae possimus, ipsum
+            voluptates labore sit asperiores vel, mollitia eius maiores quas
+            excepturi minus saepe esse quasi illo impedit veniam quibusdam. Modi
+            quasi rerum voluptates necessitatibus, asperiores vitae nostrum! Id
+            non soluta labore pariatur. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Odio labore, delectus totam tempora consequuntur
+            pariatur nostrum debitis accusamus magni optio maiores molestiae
+            quod sint placeat, maxime reprehenderit in sunt porro aliquam
+            officiis veniam rem, suscipit natus vero! Quos totam, doloribus, ab
+            at ea praesentium, quod dolorum quisquam debitis harum quibusdam?
+          </p>
+          <p class="obotz-desc-secondary">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+            placeat quod quidem hic. Omnis perferendis dolor laboriosam
+            repellendus repellat libero cum, unde quis corrupti voluptates vitae
+            non asperiores repudiandae recusandae ea obcaecati sequi.
+          </p>
+          <div class="why-obotz-features">
+            <div class="feature">
+              <span class="feature-icon">🔧</span>
+              <div>
+                <div class="feature-title">Hands-on Labs</div>
+                <div class="feature-desc">Real components, real builds</div>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">👨‍🏫</span>
+              <div>
+                <div class="feature-title">Certified Coaches</div>
+                <div class="feature-desc">Industry experts</div>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">👥</span>
+              <div>
+                <div class="feature-title">Small Batches</div>
+                <div class="feature-desc">Personal attention</div>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🏆</span>
+              <div>
+                <div class="feature-title">Competitions</div>
+                <div class="feature-desc">National events</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="obotz-desc-image">
+          <img src="image/why.jpg" alt="Student working on robotics" />
+        </div>
+      </div>
+    </div>
+
+    <!-- PROGRAM DESCRIPTION SECTION
+      The .levels div is currently empty.
+      You can place level cards or a generated program grid inside .levels.
+    -->
+    <div class="program-level">
+      <div class="program-level-header">
+        <h1>Program Description</h1>
+        <p>A 7 level stage learning journey designed for progressive mastery</p>
+      </div>
+      <div class="levels"></div>
+    </div>
+
+    <!-- O'BOTZ IN SCHOOL SECTION
+      This section is for school partnerships.
+      It has an image on one side and partnership details/actions on the other.
+    -->
+    <div class="obotz-in-school">
+      <div class="obotz-in-school-header">
+        <h1>O'botz in School</h1>
+        <p>
+          Bringing world-class robotics education directly to your classroom
+        </p>
+      </div>
+      <div class="obotz-in-school-content">
+        <div class="school-image">
+          <img
+            src="image/why.jpg"
+            alt="Student learning robotics with coding tools"
+          />
+        </div>
+        <div class="school-text">
+          <p>
+            Partner with O'botz to integrate cutting-edge robotics into your
+            curriculum. Our turnkey program includes equipment, lesson plans,
+            teacher training, and ongoing support.
+          </p>
+          <ul class="school-list">
+            <li>Aligned with national STEM standards</li>
+            <li>Complete robotics kits provided</li>
+            <li>Teacher certification & workshops</li>
+            <li>Annual inter-school competitions</li>
+          </ul>
+          <div class="school-actions">
+            <a href="#Contact" class="school-btn school-btn-primary">
+              <span
+                class="school-btn-icon icon-school"
+                aria-hidden="true"
+              ></span>
+              Partner with Us
+            </a>
+            <a href="#" class="school-btn school-btn-secondary">
+              <span
+                class="school-btn-icon icon-download"
+                aria-hidden="true"
+              ></span>
+              Brochure
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOG SECTION
+      This section is styled to match the testimonials section.
+      The arrow buttons call scrollBlogs(-1) and scrollBlogs(1), which rotate
+      the cards in JavaScript.
+    -->
+    <section class="home-blogs">
+      <div class="home-blogs-header">
+        <div>
+          <h1>From Our Blog</h1>
+          <p>Insights, stories, and tips from the world of robotics education</p>
+        </div>
+        <div class="blog-controls">
+          <button
+            class="blog-arrow"
+            type="button"
+            onclick="scrollBlogs(-1)"
+            aria-label="Previous blog posts"
+          >
+            ←
+          </button>
+          <button
+            class="blog-arrow"
+            type="button"
+            onclick="scrollBlogs(1)"
+            aria-label="Next blog posts"
+          >
+            →
+          </button>
+        </div>
+      </div>
+
+      <div class="blog-slider">
+        <div class="card" id="blogContainer">
+
+      <!-- BLOG CARD -->
+      <div class="blog-posts">
+        <div class="blog-post">
+          <img src="image/why.jpg" class="blog-image" />
+        </div>
+        <div class="blog-content">
+          <h2>5 Ways Robotics Education Benefits Kids</h2>
+          <p>Robotics education fosters creativity and problem-solving skills.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <!-- DUPLICATE AS MANY AS YOU WANT -->
+      <div class="blog-posts">
+        <div class="blog-post">
+          <img src="image/why.jpg" class="blog-image" />
+        </div>
+        <div class="blog-content">
+          <h2>Future of STEM Learning</h2>
+          <p>Discover how robotics is shaping education.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-posts">
+        <div class="blog-post">
+          <img src="image/why.jpg" class="blog-image" />
+        </div>
+        <div class="blog-content">
+          <h2>Why Coding Matters</h2>
+          <p>Build logical thinking through coding.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-posts">
+        <div class="blog-post">
+          <img src="image/why.jpg" class="blog-image" />
+        </div>
+        <div class="blog-content">
+          <h2>Hands-on Robotics</h2>
+          <p>Learning by doing real-world projects.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-posts">
+        <div class="blog-post">
+          <img src="image/why.jpg" class="blog-image" />
+        </div>
+        <div class="blog-content">
+          <h2>AI for Kids</h2>
+          <p>Introducing artificial intelligence basics.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION
+      This section shows reviews from parents/students.
+      The arrow buttons call scrollTestimonials(-1) and scrollTestimonials(1),
+      which rotate testimonial cards in JavaScript.
+    -->
+    <section class="testimonials">
+      <div class="testimonials-header">
+        <div>
+          <h1>Testimonials</h1>
+          <p>Hear from parents and students who have grown with O'botz</p>
+        </div>
+        <div class="testimonial-controls">
+          <button
+            class="testimonial-arrow"
+            type="button"
+            onclick="scrollTestimonials(-1)"
+            aria-label="Previous testimonials"
+          >
+            ←
+          </button>
+          <button
+            class="testimonial-arrow"
+            type="button"
+            onclick="scrollTestimonials(1)"
+            aria-label="Next testimonials"
+          >
+            →
+          </button>
+        </div>
+      </div>
+
+      <div class="testimonial-list" id="testimonialContainer">
+        <article class="testimonial-card">
+          <div class="quote-mark">”</div>
+          <p class="testimonial-text">
+            "My daughter went from being shy about tech to confidently
+            presenting her own robot at the science fair. O'botz changed her
+            trajectory."
+          </p>
+        
+          <div class="testimonial-person">
+            <img src="image/why.jpg" alt="Sarah Mitchell" />
+            <div>
+              <h3>Alpana Kumari Thakur</h3>
+            
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="quote-mark">”</div>
+          <p class="testimonial-text">
+            "The hands-on approach makes complex concepts click instantly. I
+            built a working robotic arm in just three weekends!"
+          </p>
+        
+          <div class="testimonial-person">
+            <img src="image/levels.jpeg" alt="Jayden Kim" />
+            <div>
+              <h3>Manish Joshi</h3>
+         
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card ">
+          <div class="quote-mark">”</div>
+          <p class="testimonial-text">
+            "As a school principal, partnering with O'botz has been
+            transformative. Student engagement in STEM has tripled."
+          </p>
+         
+          <div class="testimonial-person">
+            <img src="image/blogs.jpg" alt="Dr. Renee Patel" />
+            <div>
+              <h3>Santara Tamrakar</h3>
+              
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <script src="Js/javascript.js"></script>
+  </body>
+</html>
