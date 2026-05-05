@@ -105,7 +105,15 @@
     -->
     <div class="description">
       <div class="why-obotz-header">
-        <h1>Why O'botz</h1>
+       <div class="about-hero-brand">
+        <span style="color: black;">Why</span>
+        <strong class="brand-logo-text" aria-label="O'botz">
+          <span class="brand-o">O'</span><span class="brand-b">B</span
+          ><span class="brand-o2">O</span><span class="brand-t">T</span
+          ><span class="brand-z">Z</span>
+        </strong>
+      </div>
+
         <p class="why-obotz-subtitle">
           Empowering the next generation of innovators
         </p>
@@ -178,19 +186,129 @@
       The .levels div is currently empty.
       You can place level cards or a generated program grid inside .levels.
     -->
-    <div class="program-level">
+    <div class="program-level" id="Skill">
       <div class="program-level-header">
         <h1>Program Description</h1>
         <p>A 7 level stage learning journey designed for progressive mastery</p>
       </div>
-      <div class="levels"></div>
+      <div class="levels">
+        <div class="level-showcase" id="levelShowcase">
+          <article class="level-slide active">
+            <div class="level-image">
+              <img src="image/levels.jpeg" alt="Funtronix robotics kit" />
+            </div>
+            <div class="level-content">
+              <p class="level-number">Level 1</p>
+              <h2>Funtronix</h2>
+              <p>
+                Explore electronics through simple circuits, sensors, motors,
+                and safe hands-on activities that make everyday technology easy
+                to understand.
+              </p>
+              <a href="#Contact" class="level-btn">Read More</a>
+            </div>
+          </article>
+
+          <article class="level-slide">
+            <div class="level-image">
+              <img src="image/why.jpg" alt="Robot building activity" />
+            </div>
+            <div class="level-content">
+              <p class="level-number">Level 2</p>
+              <h2>Robotics</h2>
+              <p>
+                Build confidence with mechanical parts, wheels, gears, and
+                guided robot assembly while learning how motion works.
+              </p>
+              <a href="#Contact" class="level-btn">Read More</a>
+            </div>
+          </article>
+
+          <article class="level-slide">
+            <div class="level-image">
+              <img src="image/blogs.jpg" alt="Coding and robotics session" />
+            </div>
+            <div class="level-content">
+              <p class="level-number">Level 3</p>
+              <h2>Solarix</h2>
+              <p>
+                Connect coding logic with real robot movement using loops,
+                conditions, sequencing, and interactive challenges.
+              </p>
+              <a href="#Contact" class="level-btn">Read More</a>
+            </div>
+          </article>
+
+          <article class="level-slide">
+            <div class="level-image">
+              <img src="image/levels.jpeg" alt="Sensor robotics project" />
+            </div>
+            <div class="level-content">
+              <p class="level-number">Level 4</p>
+              <h2>Robo Vi</h2>
+              <p>
+                Use light, distance, sound, and touch sensors to make robots
+                respond to the world around them.
+              </p>
+              <a href="#Contact" class="level-btn">Read More</a>
+            </div>
+          </article>
+
+          <article class="level-slide">
+            <div class="level-image">
+              <img src="image/why.jpg" alt="Students testing robot builds" />
+            </div>
+            <div class="level-content">
+              <p class="level-number">Level 5</p>
+              <h2>C-Robo</h2>
+              <p>
+                Design stronger robots, test different mechanisms, and refine
+                projects through observation and iteration.
+              </p>
+              <a href="#Contact" class="level-btn">Read More</a>
+            </div>
+          </article>
+
+          <article class="level-slide">
+            <div class="level-image">
+              <img src="image/blogs.jpg" alt="Advanced robotics project" />
+            </div>
+            <div class="level-content">
+              <p class="level-number">Level 6</p>
+              <h2>Embetrix</h2>
+              <p>
+                Combine coding, sensors, and mechanisms to create robots that
+                complete tasks with less manual control.
+              </p>
+              <a href="#Contact" class="level-btn">Read More</a>
+            </div>
+          </article>
+
+          <article class="level-slide">
+            <div class="level-image">
+              <img src="image/levels.jpeg" alt="Competition robotics project" />
+            </div>
+            <div class="level-content">
+              <p class="level-number">Level 7</p>
+              <h2>Walko'botz</h2>
+              <p>
+                Prepare for exhibitions and competitions by solving open-ended
+                robotics challenges with creativity and teamwork.
+              </p>
+              <a href="#Contact" class="level-btn">Read More</a>
+            </div>
+          </article>
+
+          <div class="level-dots" id="levelDots" aria-label="Program levels"></div>
+        </div>
+      </div>
     </div>
 
     <!-- O'BOTZ IN SCHOOL SECTION
       This section is for school partnerships.
       It has an image on one side and partnership details/actions on the other.
     -->
-    <div class="obotz-in-school">
+    <div class="obotz-in-school" id="Project">
       <div class="obotz-in-school-header">
         <h1>O'botz in School</h1>
         <p>
@@ -413,6 +531,7 @@
         </article>
       </div>
     </section>
+   
     <script src="Js/javascript.js"></script>
   </body>
 </html>

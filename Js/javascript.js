@@ -108,6 +108,70 @@
   startAutoplay();
 })();
 
+(function () {
+  /*
+    PROGRAM LEVEL SHOWCASE
+
+    Rotates the level cards every 2 seconds and keeps the right-side dots in
+    sync. The safety checks let the script run on pages without this section.
+  */
+
+  const showcase = document.getElementById("levelShowcase");
+  const dotsContainer = document.getElementById("levelDots");
+
+  if (!showcase || !dotsContainer) {
+    return;
+  }
+
+  const slides = showcase.querySelectorAll(".level-slide");
+
+  if (!slides.length) {
+    return;
+  }
+
+  let currentIndex = 0;
+  let autoplay;
+  const autoChangeTime = 2000;
+
+  function createDots() {
+    slides.forEach((_, index) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = index === 0 ? "level-dot active" : "level-dot";
+      dot.setAttribute("aria-label", `Show level ${index + 1}`);
+      dot.innerHTML = `<span class="level-dot-circle"></span><span class="level-dot-label">Level ${index + 1}</span>`;
+      dot.addEventListener("click", () => {
+        showSlide(index);
+        startAutoplay();
+      });
+      dotsContainer.appendChild(dot);
+    });
+  }
+
+  function showSlide(index) {
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+
+    currentIndex = index;
+
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle("active", slideIndex === index);
+    });
+
+    dotsContainer.querySelectorAll(".level-dot").forEach((dot, dotIndex) => {
+      dot.classList.toggle("active", dotIndex === index);
+    });
+  }
+
+  function startAutoplay() {
+    clearInterval(autoplay);
+    autoplay = setInterval(() => showSlide(currentIndex + 1), autoChangeTime);
+  }
+
+  createDots();
+  startAutoplay();
+})();
+
 function scrollBlogs(direction) {
   /*
     BLOG CARD CONTROLS
