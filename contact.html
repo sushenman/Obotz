@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <div class="header" id="Header">
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <img src="image/Logo.png" alt="" srcset="" />
+          </div>
+          <div class="navig">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="#Skill">Program</a>
+              </li>
+              <li>
+                <a href="#Project">Franchise</a>
+              </li>
+              <li>
+                <a href="#Contact">Gallery</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn">
+            <button class="enroll-btn">
+              <span class="icon">🚀</span> Enroll Now
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="contact-image"></div>
+    <div class="contactus-container">
+      <div class="contactus-getintouch">
+        <div class="contactus-getintouch-inner">
+          <h1>Get In Touch With Us</h1>
+        </div>
+        <div class="eligibility-grid">
+          <div class="eligibility-card">
+            <div class="email-heading">
+              <h3>Email</h3>
+            </div>
+            <div class="email-body">
+              <p>email@email.com</p>
+            </div>
+          </div>
+          <div class="eligibility-card">
+            <div class="contact-number-heading">
+              <h3>Contact Number</h3>
+            </div>
+            <div class="contact-number-body">
+              <p>+1 (123) 456-7890</p>
+            </div>
+          </div>
+          <div class="eligibility-card">
+            <div class="contact-address-heading">
+              <h3>Address</h3>
+            </div>
+            <div class="contact-address-body">
+              <p>123 Main Street, City, Country</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.36144821872!2d85.31617617611295!3d27.675221426906457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4fc9b8da3d67906d%3A0x3e4946a406134a16!2zU2FtYUEgKOCkuOCkrkEpIE8nQm90eiBSb2JvdGljcw!5e0!3m2!1sen!2snp!4v1778061771138!5m2!1sen!2snp"
+          width="1385"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <div class="lets-chat">
+      <div class="lets-chat-inner">
+        <div class="lets-chat-header">
+          <h1>Let's Chat</h1>
+        </div>
+        <form
+          class="lets-chat-form"
+          action="send-contact.php"
+          method="post"
+        >
+          <div class="lets-chat-grid">
+            <div class="lets-chat-field">
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="lets-chat-field">
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="lets-chat-field">
+              <input
+                type="text"
+                name="howDidYouHear"
+                placeholder="How did you hear about us"
+              />
+            </div>
+            <div class="lets-chat-field">
+              <input
+                type="tel"
+                name="contactNumber"
+                placeholder="Contact Number"
+                required
+              />
+            </div>
+          </div>
+          <div class="lets-chat-field lets-chat-field-full">
+            <textarea name="message" placeholder="Message" required></textarea>
+          </div>
+          <div class="lets-chat-honeypot" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+          <div class="lets-chat-actions">
+            <button type="submit" class="lets-chat-submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

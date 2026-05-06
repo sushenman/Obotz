@@ -43,8 +43,6 @@ select {
   font-family: "Work Sans", sans-serif;
 }
 
-
-
 .about-image {
   min-height: clamp(180px, 24vw, 320px);
   background-image: url("../image/blogs.jpg");
@@ -868,6 +866,30 @@ button {
   object-fit: cover;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
   align-items: center;
+}
+
+.franchise-desc-image img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  padding: 20px;
+  background:
+    radial-gradient(
+      circle at 18% 18%,
+      rgba(53, 189, 196, 0.18),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 82% 86%,
+      rgba(244, 119, 33, 0.16),
+      transparent 24%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.98),
+      rgba(240, 248, 255, 0.96)
+    );
+  border: 1px solid rgba(31, 85, 115, 0.08);
+  box-shadow: 0 22px 70px rgba(27, 21, 83, 0.12);
 }
 
 /* PROGRAM DESCRIPTION SECTION */
@@ -2632,13 +2654,304 @@ button {
   line-height: 1.75;
   text-align: justify;
 }
-.franchise-why-choose-us-image {
 
-}
 .franchise-why-choose-us-image img {
   width: 100%;
 
   border-radius: 9px;
+}
+
+.franchise-cta {
+  background: transparent;
+  margin: auto;
+  display: block;
+}
+
+.franchise-cta-inner {
+  position: relative;
+  width: 100%;
+  max-width: 1385px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(22px, 3vw, 42px);
+  padding: clamp(22px, 3.2vw, 34px) clamp(22px, 3.6vw, 42px);
+  border-radius: 30px;
+  overflow: hidden;
+
+  /* box-shadow: 0 28px 80px rgba(27, 21, 83, 0.2); */
+}
+
+.franchise-cta-visual img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  /* filter: drop-shadow(0 22px 28px rgba(27, 21, 83, 0.28)); */
+}
+
+.franchise-cta-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+  color: #000000;
+}
+
+.franchise-cta-copy h2 {
+  margin: 0;
+  font-size: clamp(1.6rem, 9vw, 2.2rem);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.05;
+  letter-spacing: 6px;
+}
+
+.franchise-cta-action {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.franchise-cta-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.2em;
+  min-width: 196px;
+  padding: 16px 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c92c7a, #f47721);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow:
+    0 16px 32px rgba(201, 44, 122, 0.28),
+    0 0 0 12px rgba(255, 255, 255, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.franchise-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 22px 40px rgba(201, 44, 122, 0.32),
+    0 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+.franchise-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+}
+
+.franchise-cta-badge-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffd269;
+  box-shadow: 0 0 0 6px rgba(255, 210, 105, 0.14);
+}
+.contact-image {
+  background:
+    linear-gradient(
+      10deg,
+      rgba(39, 39, 39, 0.5),
+      rgba(40, 40, 40, 0.5),
+      rgba(28, 28, 28, 0.5)
+    ),
+    url(../image/why.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+.contactus-container{
+  max-width: 1385px;
+  margin: auto;
+}
+.contactus-getintouch-inner
+{
+  padding-top: 3em ;
+  text-align: center;
+}
+.contactus-getintouch-inner h1
+{
+    color: #000000;
+  font-size: 30px;
+  line-height: 1.05;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.contactus-details
+{
+  display: flex;
+  justify-content: space-around ;
+}
+.map{
+  padding-top:3em  ;
+   max-width: 1385px;
+  margin: auto;
+}
+
+.lets-chat {
+  padding: clamp(56px, 7vw, 92px) 32px;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(53, 189, 196, 0.12), transparent 24%),
+    radial-gradient(circle at 88% 18%, rgba(244, 119, 33, 0.1), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 250, 255, 0.96));
+}
+
+.lets-chat-inner {
+  width: 100%;
+  max-width: 1385px;
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 42px);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 24px 70px rgba(31, 85, 115, 0.12);
+}
+
+.lets-chat-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.lets-chat-header h1 {
+  margin: 0;
+  color: #1b1553;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.08;
+}
+
+.lets-chat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.lets-chat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 24px;
+}
+
+.lets-chat-field input,
+.lets-chat-field textarea {
+  width: 100%;
+  border: 1px solid rgba(31, 85, 115, 0.18);
+  border-radius: 14px;
+  background: #ffffff;
+  color: #1f2730;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.lets-chat-field input {
+  height: 56px;
+  padding: 0 18px;
+}
+
+.lets-chat-field textarea {
+  min-height: 190px;
+  padding: 16px 18px;
+  resize: vertical;
+}
+
+.lets-chat-field input::placeholder,
+.lets-chat-field textarea::placeholder {
+  color: #8e98a3;
+}
+
+.lets-chat-field input:focus,
+.lets-chat-field textarea:focus {
+  border-color: rgba(53, 189, 196, 0.9);
+  box-shadow: 0 0 0 4px rgba(53, 189, 196, 0.12);
+}
+
+.lets-chat-field-full {
+  width: 100%;
+}
+
+.lets-chat-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.lets-chat-actions {
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.lets-chat-submit {
+  border: 0;
+  min-width: 190px;
+  padding: 16px 30px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c92c7a, #f47721);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow:
+    0 16px 32px rgba(201, 44, 122, 0.2),
+    0 0 0 10px rgba(53, 189, 196, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.lets-chat-submit:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 22px 40px rgba(201, 44, 122, 0.26),
+    0 0 0 10px rgba(53, 189, 196, 0.1);
+}
+
+.lets-chat-status-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.lets-chat-status-card {
+  text-align: center;
+}
+
+.lets-chat-status-text {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #46535e;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.lets-chat-submit-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 920px) {
   .eligibility-grid {
@@ -2647,6 +2960,23 @@ button {
 
   .franchise-benefit-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .franchise-cta-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .franchise-cta-copy {
+    max-width: none;
+  }
+
+  .franchise-cta-action {
+    justify-content: center;
+  }
+
+  .lets-chat-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2681,6 +3011,62 @@ button {
     width: 56px;
     height: 56px;
     flex-basis: 56px;
+  }
+
+  .franchise-cta {
+    padding: 44px 16px;
+  }
+
+  .franchise-cta-inner {
+    padding: 24px 18px 28px;
+    border-radius: 24px;
+  }
+
+  .franchise-cta-visual {
+    width: min(100%, 200px);
+  }
+
+  .franchise-cta-copy h2 {
+    font-size: clamp(1.6rem, 9vw, 2.2rem);
+  }
+
+  .franchise-cta-button {
+    min-width: 172px;
+    padding: 14px 24px;
+  }
+
+  .franchise-cta-button::before {
+    right: -24px;
+  }
+
+  .lets-chat {
+    padding: 44px 16px;
+  }
+
+  .lets-chat-inner {
+    padding: 22px 16px 24px;
+    border-radius: 22px;
+  }
+
+  .lets-chat-header {
+    margin-bottom: 22px;
+  }
+
+  .lets-chat-grid {
+    gap: 16px;
+  }
+
+  .lets-chat-field input {
+    height: 52px;
+  }
+
+  .lets-chat-field textarea {
+    min-height: 170px;
+  }
+
+  .lets-chat-submit {
+    width: 100%;
+    min-width: 0;
   }
 }
 
