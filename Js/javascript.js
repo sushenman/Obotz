@@ -244,3 +244,47 @@ function scrollTestimonials(direction) {
     container.classList.remove("testimonial-list-changing");
   }, 160);
 }
+
+(function () {
+  /*
+    CONTACT FORM WHATSAPP FALLBACK
+
+    This keeps the contact page backend-free.
+    On submit, it builds a message from the form fields and opens the user's
+    WhatsApp chat using a wa.me link.
+  */
+
+  const form = document.getElementById("letsChatForm");
+
+  if (!form) {
+    return;
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const howDidYouHear = String(formData.get("howDidYouHear") || "").trim();
+    const contactNumber = String(formData.get("contactNumber") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+    const whatsappNumber = form.dataset.whatsappNumber || "";
+
+    if (!name || !email || !contactNumber || !message || !whatsappNumber) {
+      return;
+    }
+
+    const whatsappBody = [
+      "O'botz Contact Form",
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `How did you hear about us: ${howDidYouHear || "Not provided"}`,
+      `Contact Number: ${contactNumber}`,
+      `Message: ${message}`,
+    ].join("\n");
+
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappBody)}`;
+    window.location.href = whatsappLink;
+  });
+})();
