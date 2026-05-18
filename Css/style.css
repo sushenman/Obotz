@@ -2644,6 +2644,7 @@ button {
 .franchse-why-choose-us-content {
   display: flex;
   flex-direction: row;
+  align-items: center;
   max-width: 1385px;
   margin: 0 auto 38px;
   gap: 8em;
@@ -2655,9 +2656,16 @@ button {
   text-align: justify;
 }
 
+.franchise-why-choose-us-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .franchise-why-choose-us-image img {
   width: 100%;
-
+  max-width: 520px;
+  margin: 0 auto;
   border-radius: 9px;
 }
 
