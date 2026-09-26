@@ -22,7 +22,7 @@
                 <a href="about.html">About</a>
               </li>
               <li>
-                <a href="#Skill">Program</a>
+                <a href="program.html">Program</a>
               </li>
               <li>
                 <a href="franchise.html">Franchise</a>
@@ -36,9 +36,11 @@
             </ul>
           </div>
           <div class="btn">
-            <button class="enroll-btn">
-              <span class="icon">🚀</span> Enroll Now
-            </button>
+            <a href="enrollnow.html">
+              <button class="enroll-btn">
+                <span class="icon">🚀</span> Enroll Now
+              </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -99,17 +101,19 @@
           class="lets-chat-form"
           action="send-contact.php"
           method="post"
+          id="contactform"
         >
           <div class="lets-chat-grid">
             <div class="lets-chat-field">
-              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" id="name" name="name" placeholder="Name"  />
             </div>
             <div class="lets-chat-field">
-              <input type="email" name="email" placeholder="Email" required />
+              <input type="email" id="email" name="email" placeholder="Email"  />
             </div>
             <div class="lets-chat-field">
               <input
                 type="text"
+                id="howDidYouHear"
                 name="howDidYouHear"
                 placeholder="How did you hear about us"
               />
@@ -117,14 +121,15 @@
             <div class="lets-chat-field">
               <input
                 type="tel"
+                id="contactNumber"
                 name="contactNumber"
                 placeholder="Contact Number"
-                required
+                
               />
             </div>
           </div>
           <div class="lets-chat-field lets-chat-field-full">
-            <textarea name="message" placeholder="Message" required></textarea>
+            <textarea id="message" name="message" placeholder="Message" ></textarea>
           </div>
           <!-- <div class="lets-chat-honeypot" aria-hidden="true">
             <input type="text" name="website" tabindex="-1" autocomplete="off" />
@@ -135,5 +140,6 @@
         </form>
       </div>
     </div>
+    <script src="Js/contact.js"></script>
   </body>
 </html>
